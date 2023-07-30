@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container" style="display: flex">
+      <div class="4-col first">
+        <a href="#">Home</a>
+        /
+        <a href="#">Vehicles</a>
+
+        <p>Cars For Sale</p>
+        <br /><br />
+        <h5>Filters</h5>
+        <hr />
+
+        <h5>CATEGORIES</h5>
+        <br />
+
+        <div class="filter">
+          <a href="#">All categories</a>
+          <a href="#">Vehicles</a>
+          <a href="#" style="color: black; font-weight: bold">Cars For Sale</a>
+          <br>
+          <a href="#">Tyres, Batteries, Oils, & Accessories</a>
+          <br>
+          <a href="#">Car Spare Parts</a>
+          <br>
+          <a href="#">Motorcycles & Accessories</a>
+          <br>
+          <a href="#">Boats - Watercraft</a>
+          <br>
+          <a href="#">Heavy Trucks, Buses & Other Vehicles</a>
+        </div>
+        <hr />
+        <h5>LOCATIONS</h5>
+        <br />
+
+        <div class="dropdown">
+          <button
+            class="btn filterArrow"
+            type="button"
+            id="locationsDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Egypt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              >&#x25bc;</span
+            >
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="locationsDropdown">
+            <li><a class="dropdown-item" href="#">Qena</a></li>
+            <li><a class="dropdown-item" href="#">Alexandria</a></li>
+            <li><a class="dropdown-item" href="#">Asyut</a></li>
+            <li><a class="dropdown-item" href="#">Aswan</a></li>
+            <li><a class="dropdown-item" href="#">Cairo</a></li>
+          </ul>
+        </div>
+        <br><br><br>
+        <hr />
+
+        <h6>BRAND</h6>
+        <br />
+
+        <div class="brand">
+          <ul>
+            <li>
+              <img
+                src="https://images.dubizzle.com.eg/static/logos/alfa-romeo.png"
+                width="25px"
+              />
+              <a href="#" class="ms-1">Alfa Romeo</a>
+            </li>
+            <li>
+              <img
+                src="https://images.dubizzle.com.eg/static/logos/aston-martin.png"
+                width="25px"
+              />
+              <a href="#" class="ms-1">Aston Martin</a>
+            </li>
+            <li>
+              <img
+                src="https://images.dubizzle.com.eg/static/logos/audi.png"
+                width="25px"
+              />
+              <a href="#" class="ms-1">Audi</a>
+            </li>
+            <li>
+              <img
+                src="https://images.dubizzle.com.eg/static/logos/baic.png"
+                width="25px"
+              />
+              <a href="#" class="ms-1">Baic</a>
+            </li>
+            <li>
+              <img
+                src="https://images.dubizzle.com.eg/static/logos/bentley.png"
+                width="25px"
+              />
+              <a href="#" class="ms-1">Bentley</a>
+            </li>
+            <li>
+              <a href="#" class="ms-1 view" style="color: blue">View more</a>
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <h5>ADD TYPE</h5>
+        <br />
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">For Sale</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox2" name="checkbox2" />
+          <label for="checkbox2">Wanted Item</label>
+        </div>
+        <hr />
+        <h5>FUEL TYPE</h5>
+        <br />
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Benzine</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Diesel</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Electric</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Hybrid</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Natural Gas</label>
+        </div>
+
+        <hr />
+
+        <h5>PRICE</h5>
+        <br />
+
+        <div class="inputs">
+          <input
+            type="text"
+            id="input1"
+            name="input1"
+            value="6.000"
+            style="display: inline-block; width: 30%"
+          />
+          <input
+            type="text"
+            id="input2"
+            name="input2"
+            value="20.000.000"
+            style="display: inline-block; width: 30%"
+          />
+        </div>
+        <br /><br />
+
+        <hr />
+
+        <h5>PAYMENT OPTIONS</h5>
+        <br />
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Cash</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Installments</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Exchange</label>
+        </div>
+
+        <hr />
+
+        <h5>YEAR</h5>
+        <br />
+
+        <div class="inputs">
+          <input
+            type="text"
+            id="input1"
+            name="input1"
+            value="1900"
+            style="display: inline-block; width: 30%"
+          />
+          <input
+            type="text"
+            id="input2"
+            name="input2"
+            value="2023"
+            style="display: inline-block; width: 30%"
+          />
+        </div>
+
+        <hr />
+
+        <h5>KILOMETERS</h5>
+        <br />
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">0 to 9999</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">100000 to 119999</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">10000 to 19999</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">More than 200000</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">120000 to 139999</label>
+        </div>
+
+        <a href="#" class="ms-1 view" style="color: blue">View more</a>
+
+        <hr />
+
+        <h5>TRANSMISSION TYPE</h5>
+        <br />
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Automatic</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Manual</label>
+        </div>
+        <hr />
+        <h5>CONDITION</h5>
+        <br />
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Used</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">New</label>
+        </div>
+
+        <hr />
+        <h5>COLOR</h5>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Black</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">White</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Gray</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Silver</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Blue - Navy Blue</label>
+        </div>
+        <a href="#" class="ms-1 view" style="color: blue">View more</a>
+        <hr />
+        <h5>BODY TYPE</h5>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Sedan</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">SUV</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Hactchback</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">4X4</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Coupe</label>
+        </div>
+        <a href="#" class="ms-1 view" style="color: blue">View more</a>
+
+        <hr />
+        <h5>ENGINE CAPACITY (CC)</h5>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">1600</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">1400 - 1500</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">1800 - 2000</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">More than 5000</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">1000 - 1300</label>
+        </div>
+        <a href="#" class="ms-1 view" style="color: blue">View more</a>
+        <hr />
+        <h5>EXTRA FEATURES</h5>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Air Conditioning</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">AM/FM Radio</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Power Windows</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Power Locks</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Bluetooth System</label>
+        </div>
+        <a href="#" class="ms-1 view" style="color: blue">View more</a>
+        <hr />
+        <h5>VIDEO</h5>
+        <br>
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Not Available</label>
+        </div>
+
+        <hr />
+        <h5>VIRTUAL TOUR</h5>
+        <br>
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Not Available</label>
+        </div>
+
+      </div>
+      <div class="8-col w-100">
+      
+       
+      <button> <i class="fa-regular fa-heart "></i> Save Search</button>
+<br><br><br>
+
+
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row text-center">
+        <div class="col-md-2">
+          <img src="https://images.dubizzle.com.eg/thumbnails/41739558-120x90.webp" width="100px" alt="Image 1">
+          <p>Auto Garage</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://images.dubizzle.com.eg/thumbnails/40804818-120x90.webp" width="100px" alt="Image 2">
+          <p>khaled Aboud automotive</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://images.dubizzle.com.eg/thumbnails/1167-120x90.webp" width="100px" alt="Image 3">
+          <p>Aboul Ezz automotive</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://images.dubizzle.com.eg/thumbnails/53034143-120x90.webp" width="100px" alt="Image 4">
+          <p>El-Tayaran Cars</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://images.dubizzle.com.eg/thumbnails/51873414-120x90.webp" width="100px" alt="Image 5">
+          <p>Allam Automotive</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://images.dubizzle.com.eg/thumbnails/49965420-120x90.webp" width="100px" alt="Image 6">
+          <p>Mohamed Fahmi Cars</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="https://images.dubizzle.com.eg/thumbnails/45381778-120x90.webp" width="100px" alt="Image 7">
+          <p>El khial Cars</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://images.dubizzle.com.eg/thumbnails/41739723-120x90.webp" width="100px" alt="Image 8">
+          <p>Auto Garage</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black;"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true" style="color:black;"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br><br>
+
+
+
+      <div class="only">
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Only with photos</label>
+        </div>
+      
+      
+      <hr>
+      <div class="ad">
+        <h6>Featured ads</h6>
+        <h6>View all</h6>
+      </div>
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/58677956-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <div class="icons">
+                  <h3 style="color: red;">EGP 500,000</h3>
+                  <i class="fa-regular fa-heart "></i>
+                </div>
+                  <h2>Ciat Cobra</h2>
+                  <p>New . 2023</p>
+                  <p>Nasr City. Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/62438362-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 12,00,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>For Sale</h2>
+                  <p>New . 2023</p>
+                  <p>Maadi,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/62558321-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 623,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>For Sale</h2>
+                  <p>New . 2018</p>
+                  <p>Maadi,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/46790629-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 555,120</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>For Sale</h2>
+                  <p>New . 2023</p>
+                  <p>Maadi,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/61849285-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 952,235</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>For Sale</h2>
+                  <p>New . 2023</p>
+                  <p>Maadi,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/61085283-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 452,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>May Beach</h2>
+                  <p>New . 2023</p>
+                  <p>Maadi,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/62417407-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 24,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>Suziki Swift</h2>
+                  <p>New . 22</p>
+                  <p>Qena,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/59197862-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 553,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>Nahw Swift</h2>
+                  <p>New . 22</p>
+                  <p>Qena,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/61982518-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 553,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>Nahw Swift</h2>
+                  <p>New . 22</p>
+                  <p>Qena,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/28018873-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 553,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>Nahw Swift</h2>
+                  <p>New . 22</p>
+                  <p>Qena,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/61528708-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 553,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>Nahw Swift</h2>
+                  <p>New . 22</p>
+                  <p>Qena,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://images.dubizzle.com.eg/thumbnails/62560191-240x180.webp"  class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+
+                  <div class="icons">
+                    <h3 style="color: red;">EGP 553,000</h3>
+                    <i class="fa-regular fa-heart "></i>
+                  </div>
+                  <h2>Nahw Swift</h2>
+                  <p>New . 22</p>
+                  <p>Qena,Cairo .  3 days ago</p>
+                  <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px;padding-right: 25px; border-style: none; border-radius: 10px;">
+                  <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px;padding-right: 25px;border-radius: 10px; border: 1px solid red;">
+                 
+                </div>
+                <div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            ...
+          </div>
+        
+          <!-- Pagination -->
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="0">1</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="1">2</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="2">3</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="3">4</a></li>
+          </ul>
+        
+          <!-- Left and right controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            ...
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            ...
+          </button>
+        </div>
+      
+      
+      </div>
+    </div>
+    <script src="/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
