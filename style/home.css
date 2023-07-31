@@ -1,0 +1,32 @@
+*{
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+#container{
+    width: 85%;
+}
+a:hover{
+    color: #4262c9;
+}
+.img{
+    height: 10rem;
+}
+.section{
+    background-color: #f6f6f6;
+}
+.angle_div{
+    transition: 500ms;
+}
+.angle_a:hover .angle_div{
+    margin-left: .8rem !important;
+}
+
+#back_to_top{
+    display: none;
+}
+#back_to_top:hover{
+    background-color: rgb(255, 244, 244) !important;
+}
+#a:hover{
+    color: #222 !important;
+}
