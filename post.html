@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Dubizzle - Buy and Sell anywhere in Egypt</title>
+    <style>
+      .pl-3{
+        padding-left: 25px !important;
+      }
+      .pr-1{
+        padding-right: 10px !important;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar bg-header p-0 m-0 shadow-sm ">
@@ -18,13 +26,17 @@
   <div class="container-fluid">
     <h5 class="text-center m-3"  style="font-weight: bold;">POST YOUR AD</h5>
     <div class="card p-0 container">
-      <div class="row p-r-">
+      <div class="row">
+        <h6 class="p-2 pl-3">CHOOSE A CATEGORY</h6>
+      </div>
+      <hr class="p-0 m-0">
+      <div class="row">
         <div class="col-4 border-end" style="padding-right: 0;" id="main-cat">
           
-          <!-- <div class=" d-flex justify-content-between align-items-center border-bottom p-1">
-            <img src="./images/svg/vehicles.svg" height="30px" style="padding: 0px 20px;"> 
-            <p style="margin-bottom: 0; font-size: small;">Vehicles & Vehicles</p>
-            <img src="./images/svg/arrow-right.svg" height="20px" role="button" onclick="showSubCategories()">
+          <!-- <div class="item d-flex align-items-center border-bottom p-1" style="height:45px" role="button" id="Vehicles" onclick="showSubCategories(this)">
+            <img src="${data[cat].icon}" height="30px" width="70px" style="padding: 0px 20px;"> 
+            <p style="margin-bottom: 0; font-size: small;" class="me-auto">${cat}</p>
+            <img src="./images/svg/arrow-right.svg" height="20px">
           </div> -->
 
         </div>
