@@ -89,4 +89,26 @@ button{
 .icons{
     display: flex;
     justify-content: space-between;
-}
+} 
+
+@media only screen and (max-width: 994px) {
+    .first{
+        width: 100%;
+    }
+    .second{
+        width: 100%;
+    }
+  }
+
+
+  @media only screen and (max-width: 782px) {
+   .first{
+    display: inline-block;
+   }
+   .filter{
+    /* margin: 10px; */
+    padding-right: 30px;
+    font-size: 10px;
+    line-height: 10px;
+   }
+  }
