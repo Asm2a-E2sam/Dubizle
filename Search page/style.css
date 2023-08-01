@@ -24,10 +24,16 @@
     font-size: 12px;
     display: flex;
     flex-direction: column;
-    line-height: 6px;
+    line-height: 1px;
     
 }
 
+.locate{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    
+}
 .filterArrow{
     border: 1px solid black;
 }
@@ -83,4 +89,12 @@ button{
 .icons{
     display: flex;
     justify-content: space-between;
+}
+.only{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#myCarousel{
+    background-color: #f6f6f6;
 }
