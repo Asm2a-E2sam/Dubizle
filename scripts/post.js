@@ -17,7 +17,7 @@ xhr.addEventListener("load",function(){
             <div class="item d-flex align-items-center border-bottom p-1" style="height:45px" role="button" id="${cat}" onclick="showSubCategories(this)">
             <img src="${data[cat].icon}" height="30px" width="70px" style="padding: 0px 20px;"> 
             <p style="margin-bottom: 0; font-size: small;" class="me-auto">${cat}</p>
-            <img src="./images/svg/arrow-right.svg" height="11px">
+            <img src="./images/svg/arrow-right.svg" height="14px" class="pr-1">
           </div>`
         }
     }
@@ -41,7 +41,7 @@ function showSubCategories(th){
         }else{
             sub1_cat.innerHTML +=`<div class="item d-flex justify-content-between align-items-center border-bottom p-1" style="height: 45px;"role="button" id="${th.id}" onclick="showSub2Categories(this,${cat})">
             <div style="font-size:small; padding-left:20px">${items[cat].title}</div>
-            <img src="./images/svg/arrow-right.svg" height="20px">
+            <img src="./images/svg/arrow-right.svg" height="14px" class="pr-1">
           </div>`
         }
     }
