@@ -68,3 +68,6 @@ function openAttributes(th){
     location.href ="./attributes.html"
 }
 
+function openHome(){
+    location.href ="./home.html"
+}
