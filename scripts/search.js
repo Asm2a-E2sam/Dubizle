@@ -1,7 +1,7 @@
-function filterOptions(searchText2) {
+function filterOptions2(searchText2) {
     const options2 = $(".options2 li");
     let anyVisible2 = false;
-    options.each(function () {
+    options2.each(function () {
       const optionText2 = $(this).text().trim().toLowerCase();
       if (optionText2.includes(searchText2)) {
         $(this).addClass("matching"); // Add the "matching" class to matching options
@@ -24,7 +24,7 @@ function filterOptions(searchText2) {
   $(document).ready(function () {
     $("#location-search2").on("input", function () {
       const searchText2 = $(this).val().trim().toLowerCase();
-      filterOptions(searchText2); // Call the filteroptions2 function correctly
+      filterOptions2(searchText2); // Call the filteroptions2 function correctly
       console.log(searchText2);
     });
 
