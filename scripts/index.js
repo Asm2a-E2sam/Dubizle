@@ -47,6 +47,7 @@ $(document).ready(function () {
   });
 });
 
+
 // split & nested categories arrow
 
 // Use jQuery hover method to show/hide the arrow
