@@ -7,7 +7,196 @@
     <title>Single Product Page</title>
     <link rel="stylesheet" href="./bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./styles/singleProduct.css">
+
+    <style>
+        .body {
+            font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+
+        .overlay2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+
+        .close-overlay {
+            position: absolute;
+            top: 2px;
+            right: 10px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* //////////// add classes */
+        /* #carouselNB {
+            position: absolute;
+            top: 50%;
+            right: 2vw;
+        }
+
+        #carouselPB {
+
+            position: absolute;
+            top: 50%;
+            left: 2vw;
+
+        }
+
+        #carouselNT {
+            position: absolute;
+            top: 15vw;
+            left: 5vw;
+        }
+
+        #carouselPT {
+            position: absolute;
+            top: 15vw;
+            right: 5vw;
+        } */
+
+        /* //////////// add classes */
+
+        .close-overlay2 {
+            position: absolute;
+            top: 2px;
+            right: 10px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .pagination {
+            text-align: center;
+        }
+
+        .prev,
+        .next {
+            background-color: rgba(0, 0, 0, .4);
+            border-radius: 50%;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px 15px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        .image-number {
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+        }
+
+        .comp-logo-img {
+            width: 160px;
+            height: 52px;
+        }
+
+        .loc-img {
+            position: relative;
+        }
+
+        .loc-btn {
+            position: absolute;
+            top: 295%;
+            left: 35%;
+        }
+
+        .main-add {
+            background-color: rgba(0, 0, 0, .4);
+            width: 5vh;
+            height: 5vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .adds {
+            border: solid 1px black;
+            background-color: white;
+            width: 5vh;
+            height: 5vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 -6px;
+        }
+
+        .cards-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .card {
+            margin: 0 1.5em;
+        }
+
+        .chato:hover {
+            background-color: #FEF5F5;
+        }
+
+        .showPhone:hover {
+            background-color: #BA0000 !important;
+        }
+
+        @media (min-width: 768px) {
+            .card img {
+                height: 11em;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #carouselExampleCaptions {
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px) {
+            #carouselExampleCaptions2 {
+                display: none;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -47,12 +236,13 @@
                     </div>
                     <button class="carousel-control-prev main-add" type="button"
                         data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span id="carouselPT" id="carouselPT" class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next main-add" type="button"
                         data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span id="carouselNT" class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -531,12 +721,12 @@
                                 </div>
                                 <button class="carousel-control-prev adds" type="button"
                                     data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span id="carouselPB" class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
                                 <button class="carousel-control-next adds" type="button"
                                     data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span id="carouselNB" class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
@@ -791,12 +981,12 @@
                                 </div>
                                 <button class="carousel-control-prev adds" type="button"
                                     data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span id="carouselPB" class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
                                 <button class="carousel-control-next adds" type="button"
                                     data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span id="carouselNB" class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
@@ -819,12 +1009,12 @@
                     </div>
                     <div class="w-100">
                         <div style="background-color: #E00000; color: white;"
-                            class="d-flex justify-content-center align-items-center fs-5 fw-semibold rounded pt-2 pb-2 mx-1 mt-3">
+                            class="d-flex justify-content-center align-items-center fs-5 fw-semibold rounded pt-2 pb-2 mx-1 mt-3 showPhone">
                             <i class="bi bi-telephone me-2"></i>
                             <p class="m-0">Show Phone Number</p>
                         </div>
                         <div class="d-flex justify-content-center align-items-center fs-5 fw-semibold rounded 
-                            pt-2 pb-2 mx-1 mt-3 border border-danger">
+                            pt-2 pb-2 mx-1 mt-3 border border-danger chato">
                             <i class="bi bi-wechat me-2" style="color: #E00000;"></i>
                             <p class="m-0">Chat</p>
                         </div>
@@ -857,87 +1047,122 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="JQuery/jquery-3.7.0.min.js"></script>
+    <script src="./bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/5d6f98b5d1.js" crossorigin="anonymous"></script>
 
-            <script src="JQuery/jquery-3.7.0.min.js"></script>
-            <script src="./bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-            <script src="https://kit.fontawesome.com/5d6f98b5d1.js" crossorigin="anonymous"></script>
-            <script>
-                $('.imgo').click(function () {
-                    var src = $(this).attr('src');
-                    var index = $(this).parent().index() + 1;
-                    var total = $('.gallery img').length;
-                    $('.overlay-image').attr('src', src);
-                    $('#image-number').text(index + ' / ' + total);
-                    $('.overlay').css('display', 'flex').fadeIn();
-                    // console.log("zzzzzzzzzzzzzzzz");
-                });
+    <script>
+        $('.imgo').click(function () {
+            var src = $(this).attr('src');
+            var index = $(this).parent().index() + 1;
+            var total = $('.gallery img').length;
+            $('.overlay-image').attr('src', src);
+            $('#image-number').text(index + ' / ' + total);
+            $('.overlay').css('display', 'flex').fadeIn();
+            // console.log("zzzzzzzzzzzzzzzz");
+        });
 
-                $('.overlay').click(function (e) {
-                    if (e.target === this) {
-                        $('.overlay').fadeOut();
-                    }
-                });
+        $('.overlay').click(function (e) {
+            if (e.target === this) {
+                $('.overlay').fadeOut();
+            }
+        });
 
-                $('.prev').click(function () {
-                    var currentImage = $('.overlay-image').attr('src');
-                    var prevImage = $('.gallery .carousel-item:has(img[src="' + currentImage + '"])').prev().find('img').attr('src');
-                    if (prevImage) {
-                        $('.overlay-image').attr('src', prevImage);
-                    } else {
-                        var firstImage = $('.gallery .carousel-item').last().find('img').attr('src');
-                        $('.overlay-image').attr('src', firstImage);
-                    }
-                    updateImageNumber();
-                });
-                $('.next').click(function () {
-                    var currentImage = $('.overlay-image').attr('src');
-                    var nextImage = $('.gallery .carousel-item:has(img[src="' + currentImage + '"])').next().find('img').attr('src');
-                    if (nextImage) {
-                        $('.overlay-image').attr('src', nextImage);
-                    } else {
-                        var lastImage = $('.gallery .carousel-item').first().find('img').attr('src');
-                        $('.overlay-image').attr('src', lastImage);
-                    }
-                    updateImageNumber();
-                });
-                function updateImageNumber() {
-                    var currentImage = $('.overlay-image').attr('src');
-                    var imageIndex = $('.gallery img').index($('.gallery img[src="' + currentImage + '"]')) + 1;
-                    var totalImages = $('.gallery img').length;
-                    $('#image-number').text(imageIndex + " / " + totalImages);
-                }
-                $('.close-overlay').click(function () {
-                    $('.overlay').fadeOut();
-                });
-
-                $('.loc-btn').click(function () {
-                    var src = $('.loc-img img').attr('src');
-                    $('.overlay-image2').attr('src', src);
-                    $('.overlay2').css('display', 'flex').fadeIn();
-                });
-
-                $('.close-overlay2').click(function () {
-                    $('.overlay2').fadeOut();
-                });
-
-                $('.overlay2').click(function (e) {
-                    if (e.target === this) {
-                        $('.overlay2').fadeOut();
-                    }
-                });
-    function loadAndInsert(url, targetElement) {
-      fetch(url)
-      .then((response) => response.text())
-      .then((content) => {
-        document.querySelector(targetElement).innerHTML = content;
-          })
-          .catch((error) => {
-            console.error("Error loading " + url, error);
-          }); 
+        $('.prev').click(function () {
+            var currentImage = $('.overlay-image').attr('src');
+            var prevImage = $('.gallery .carousel-item:has(img[src="' + currentImage + '"])').prev().find('img').attr('src');
+            if (prevImage) {
+                $('.overlay-image').attr('src', prevImage);
+            } else {
+                var firstImage = $('.gallery .carousel-item').last().find('img').attr('src');
+                $('.overlay-image').attr('src', firstImage);
+            }
+            updateImageNumber();
+        });
+        $('.next').click(function () {
+            var currentImage = $('.overlay-image').attr('src');
+            var nextImage = $('.gallery .carousel-item:has(img[src="' + currentImage + '"])').next().find('img').attr('src');
+            if (nextImage) {
+                $('.overlay-image').attr('src', nextImage);
+            } else {
+                var lastImage = $('.gallery .carousel-item').first().find('img').attr('src');
+                $('.overlay-image').attr('src', lastImage);
+            }
+            updateImageNumber();
+        });
+        function updateImageNumber() {
+            var currentImage = $('.overlay-image').attr('src');
+            var imageIndex = $('.gallery img').index($('.gallery img[src="' + currentImage + '"]')) + 1;
+            var totalImages = $('.gallery img').length;
+            $('#image-number').text(imageIndex + " / " + totalImages);
         }
-        loadAndInsert("./reuseable/header.html", ".header");
-        loadAndInsert("./reuseable/footer.html", ".footer");
-        
+        $('.close-overlay').click(function () {
+            $('.overlay').fadeOut();
+        });
+
+        $('.loc-btn').click(function () {
+            var src = $('.loc-img img').attr('src');
+            $('.overlay-image2').attr('src', src);
+            $('.overlay2').css('display', 'flex').fadeIn();
+        });
+
+        $('.close-overlay2').click(function () {
+            $('.overlay2').fadeOut();
+        });
+
+        $('.overlay2').click(function (e) {
+            if (e.target === this) {
+                $('.overlay2').fadeOut();
+            }
+        });
+
+
     </script>
-  </body>
+
+    <script>
+
+        // Function to load and insert HTML content
+
+        //   
+        function loadAndInsert(url, targetElement) {
+            fetch(url)
+                .then((response) => response.text())
+                .then((content) => {
+                    document.querySelector(targetElement).innerHTML = content;
+                    const scripts = document.querySelectorAll(`${targetElement} script`);
+                    scripts.forEach((script) => {
+                        const newScript = document.createElement("script");
+                        newScript.textContent = script.textContent;
+                        document.querySelector(targetElement).appendChild(newScript);
+                    });
+                })
+                .catch((error) => {
+                    console.error("Error loading " + url, error);
+                });
+        }
+
+
+
+
+        // Load header.html and insert into <header> element
+
+        loadAndInsert("./h&f/header.html", ".header");
+
+
+
+
+
+
+        // Load footer.html and insert into <footer> element
+
+        loadAndInsert("./h&f/footer.html", ".footer");
+
+    </script>
+
+
+</body>
+
 </html>

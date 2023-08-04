@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Page</title>
-    <link rel="icon" type="image/x-icon" href="./images/ficon2.png">
-    <link
-      rel="stylesheet"
-      href="/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles/SearchPage.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <div class="container" style="display: flex">
-      <div class="4-col first">
-        <a href="#">Home</a>
-        /
-        <a href="#">Vehicles</a>
 
-        <p>Cars For Sale</p>
-        <br /><br />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Page</title>
+  <link rel="icon" type="image/x-icon" href="./images/ficon2.png" />
+  <link rel="stylesheet" href="./bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/SearchPage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="header"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-4 first">
         <h5>Filters</h5>
         <hr />
 
@@ -29,34 +26,27 @@
 
         <div class="filter">
           <a href="#">All categories</a>
-          <a href="#" style="padding-left: 15px;">Vehicles</a>
-          <a href="#" style="color: black; font-weight: bold; padding-left: 25px;">Cars For Sale</a>
-          <br>
-          <a href="#" style="padding-left: 25px;">Tyres, Batteries, Oils, & Accessories</a>
-          <br>
-          <a href="#" style="padding-left: 25px;">Car Spare Parts</a>
-          <br>
-          <a href="#" style="padding-left: 25px;">Motorcycles & Accessories</a>
-          <br>
-          <a href="#" style="padding-left: 25px;">Boats - Watercraft</a>
-          <br>
-          <a href="#" style="padding-left: 25px;">Heavy Trucks, Buses & Other Vehicles</a>
+          <a href="#" class="pe-2">Vehicles</a>
+          <a href="#" class="fw-bold ps-2">Cars For Sale</a>
+          <br />
+          <a href="#" class="ps-3">Tyres, Batteries, Oils, & Accessories</a>
+          <br />
+          <a href="#" class="ps-3">Car Spare Parts</a>
+          <br />
+          <a href="#" class="ps-3">Motorcycles & Accessories</a>
+          <br />
+          <a href="#" class="ps-3">Boats - Watercraft</a>
+          <br />
+          <a href="#" class="ps-3">Heavy Trucks, Buses & Other Vehicles</a>
         </div>
         <hr />
         <h5>LOCATIONS</h5>
         <br />
 
         <div class="dropdown">
-          <button
-            class="btn filterArrow"
-            type="button"
-            id="locationsDropdown"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Egypt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-              >&#x25bc;</span
-            >
+          <button class="btn filterArrow" type="button" id="locationsDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Egypt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#x25bc;</span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="locationsDropdown">
             <li><a class="dropdown-item" href="#">Qena</a></li>
@@ -67,28 +57,22 @@
           </ul>
         </div>
 
-        <br><br><br>
+        <br /><br /><br />
         <div class="locate">
-        <a href="#">Egypt</a>
-        <br>
-        <a href="#" style="padding-left: 25px;">Cairo</a>
-        <br>
-        <a href="#" style="padding-left: 25px;">Giza</a>
-        <br>
-        <a href="#" style="padding-left: 25px;">Alexandria</a>
-        <br>
-        <a href="#" style="padding-left: 25px;">Dameitta</a>
-        <br>
-        <a href="#" style="padding-left: 25px;">Gharbia</a>
-<br>
-        <a href="#" class="ms-1 view" style="color: rgb(96, 96, 209);padding-left: 25px;">View more</a>
-
-      </div>
-
-
-
-
-
+          <a href="#">Egypt</a>
+          <br />
+          <a href="#" class="ps-3">Cairo</a>
+          <br />
+          <a href="#" class="ps-3">Giza</a>
+          <br />
+          <a href="#" class="ps-3">Alexandria</a>
+          <br />
+          <a href="#" class="ps-3">Dameitta</a>
+          <br />
+          <a href="#" class="ps-3">Gharbia</a>
+          <br />
+          <a href="#" class="ms-1 ps-5 view">View more</a>
+        </div>
 
         <hr />
 
@@ -98,42 +82,27 @@
         <div class="brand">
           <ul>
             <li>
-              <img
-                src="https://images.dubizzle.com.eg/static/logos/alfa-romeo.png"
-                width="25px"
-              />
+              <img src="https://images.dubizzle.com.eg/static/logos/alfa-romeo.png" width="25px" />
               <a href="#" class="ms-1">Alfa Romeo</a>
             </li>
             <li>
-              <img
-                src="https://images.dubizzle.com.eg/static/logos/aston-martin.png"
-                width="25px"
-              />
+              <img src="https://images.dubizzle.com.eg/static/logos/aston-martin.png" width="25px" />
               <a href="#" class="ms-1">Aston Martin</a>
             </li>
             <li>
-              <img
-                src="https://images.dubizzle.com.eg/static/logos/audi.png"
-                width="25px"
-              />
+              <img src="https://images.dubizzle.com.eg/static/logos/audi.png" width="25px" />
               <a href="#" class="ms-1">Audi</a>
             </li>
             <li>
-              <img
-                src="https://images.dubizzle.com.eg/static/logos/baic.png"
-                width="25px"
-              />
+              <img src="https://images.dubizzle.com.eg/static/logos/baic.png" width="25px" />
               <a href="#" class="ms-1">Baic</a>
             </li>
             <li>
-              <img
-                src="https://images.dubizzle.com.eg/static/logos/bentley.png"
-                width="25px"
-              />
+              <img src="https://images.dubizzle.com.eg/static/logos/bentley.png" width="25px" />
               <a href="#" class="ms-1">Bentley</a>
             </li>
             <li>
-              <a href="#" class="ms-1 view" style="color: rgb(96, 96, 209)">View more</a>
+              <a href="#" class="ms-md-5 ms-0 view">View more</a>
             </li>
           </ul>
         </div>
@@ -185,21 +154,9 @@
         <br />
 
         <div class="inputs">
-          <input
-            type="text"
-            id="input1"
-            name="input1"
-            value="6.000"
-            style="display: inline-block; width: 30%"
-          />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input
-            type="text"
-            id="input2"
-            name="input2"
-            value="20.000.00"
-            style="display: inline-block; width: 30%"
-          />
+          <input type="text" id="input1" name="input1" value="6.000" class="d-inline-block me-2 w-25" />
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+          <input type="text" id="input2" name="input2" value="20.000.00" class="d-inline-block me-2 w-25" />
         </div>
         <br />
 
@@ -229,21 +186,9 @@
         <br />
 
         <div class="inputs">
-          <input
-            type="text"
-            id="input1"
-            name="input1"
-            value="1900"
-            style="display: inline-block; width: 30%"
-          />
+          <input type="text" id="input1" name="input1" value="1900" class="d-inline-block me-2 w-25" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input
-            type="text"
-            id="input2"
-            name="input2"
-            value="2023"
-            style="display: inline-block; width: 30%"
-          />
+          <input type="text" id="input2" name="input2" value="2023" class="d-inline-block me-2 w-25" />
         </div>
 
         <hr />
@@ -276,7 +221,7 @@
           <label for="checkbox1">120000 to 139999</label>
         </div>
 
-        <a href="#" class="ms-1 view" style="color: rgb(96, 96, 209)">View more</a>
+        <a href="#" class="ms-md-5 ms-0 view">View more</a>
 
         <hr />
 
@@ -331,7 +276,7 @@
           <input type="checkbox" id="checkbox1" name="checkbox1" />
           <label for="checkbox1">Blue - Navy Blue</label>
         </div>
-        <a href="#" class="ms-1 view" style="color: rgb(96, 96, 209)">View more</a>
+        <a href="#" class="ms-md-5 ms-0 view">View more</a>
         <hr />
         <h5>BODY TYPE</h5>
 
@@ -359,7 +304,7 @@
           <input type="checkbox" id="checkbox1" name="checkbox1" />
           <label for="checkbox1">Coupe</label>
         </div>
-        <a href="#" class="ms-1 view" style="color: rgb(96, 96, 209)">View more</a>
+        <a href="#" class="ms-md-5 ms-0 view">View more</a>
 
         <hr />
         <h5>ENGINE CAPACITY (CC)</h5>
@@ -388,7 +333,7 @@
           <input type="checkbox" id="checkbox1" name="checkbox1" />
           <label for="checkbox1">1000 - 1300</label>
         </div>
-        <a href="#" class="ms-1 view" style="color: rgb(96, 96, 209)">View more</a>
+        <a href="#" class="ms-md-5 ms-0 view">View more</a>
         <hr />
         <h5>EXTRA FEATURES</h5>
 
@@ -416,10 +361,10 @@
           <input type="checkbox" id="checkbox1" name="checkbox1" />
           <label for="checkbox1">Bluetooth System</label>
         </div>
-        <a href="#" class="ms-1 view" style="color: rgb(96, 96, 209)">View more</a>
+        <a href="#" class="ms-md-5 ms-0 view">View more</a>
         <hr />
         <h5>VIDEO</h5>
-        <br>
+        <br />
         <div>
           <input type="checkbox" id="checkbox1" name="checkbox1" />
           <label for="checkbox1">Not Available</label>
@@ -427,422 +372,414 @@
 
         <hr />
         <h5>VIRTUAL TOUR</h5>
-        <br>
+        <br />
         <div>
           <input type="checkbox" id="checkbox1" name="checkbox1" />
           <label for="checkbox1">Not Available</label>
         </div>
-
       </div>
-      <div class="8-col w-100">
-      
-       
-      <button> <i class="fa-regular fa-heart "></i> Save Search</button>
-<br><br><br>
+      <div class="col-xxl-8">
+        <button><i class="fa-regular fa-heart"></i> Save Search</button>
+        <br /><br /><br />
 
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner Featured_Businesses">
+            <div class="carousel-item active">
+              <p class="pb-1 fs-6">
+                Featured Businesses
+              </p>
+              <div class="row text-center">
+                <div class="col-md-2">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/41739558-120x90.webp" width="100px"
+                    alt="Image 1" />
+                  <p class="text-decoration-underline">Auto Garage</p>
+                </div>
+                <div class="col-md-2">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/40804818-120x90.webp" width="100px"
+                    alt="Image 2" />
+                  <p class="text-decoration-underline">
+                    khaled Aboud automotive
+                  </p>
+                </div>
+                <div class="col-md-2">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/1167-120x90.webp" width="100px" alt="Image 3" />
+                  <p class="text-decoration-underline">Aboul Ezz automotive</p>
+                </div>
+                <div class="col-md-2">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/53034143-120x90.webp" width="100px"
+                    alt="Image 4" />
+                  <p class="text-decoration-underline">El-Tayaran Cars</p>
+                </div>
+                <div class="col-md-2">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/51873414-120x90.webp" width="100px"
+                    alt="Image 5" />
+                  <p class="text-decoration-underline">Allam Automotive</p>
+                </div>
+                <div class="col-md-2">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/49965420-120x90.webp" width="100px"
+                    alt="Image 6" />
+                  <p class="text-decoration-underline">Mohamed Fahmi Cars</p>
+                </div>
+              </div>
+            </div>
 
+            <div class="carousel-item">
+              <div class="row">
+                <p class="pb-1 fs-6">
+                  Featured Businesses
+                </p>
 
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <p style="padding-bottom: 10px;font-size: 20px;">Featured Businesses</p>
-      <div class="row text-center">
-        <div class="col-md-2">
-          <img src="https://images.dubizzle.com.eg/thumbnails/41739558-120x90.webp" width="100px" alt="Image 1">
-          <p style="text-decoration: underline;">Auto Garage</p>
+                <div class="col-md-2 text-center">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/45381778-120x90.webp" width="100px"
+                    alt="Image 7" />
+                  <p class="text-decoration-underline">El khial Cars</p>
+                </div>
+                <div class="col-md-2 text-center">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/41739723-120x90.webp" width="100px"
+                    alt="Image 8" />
+                  <p class="text-decoration-underline">Auto Garage</p>
+                </div>
+
+                <div class="col-md-2 text-center">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/21430697-120x90.webp" width="100px"
+                    alt="Image 8" />
+                  <p class="text-decoration-underline">Car Accident</p>
+                </div>
+
+                <div class="col-md-2 text-center">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/1167-120x90.webp" width="100px" alt="Image 8" />
+                  <p class="text-decoration-underline">Aboul Ezz Automative</p>
+                </div>
+
+                <div class="col-md-2 text-center">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/47619201-120x90.webp" width="100px"
+                    alt="Image 8" />
+                  <p class="text-decoration-underline">El Hawi Trading</p>
+                </div>
+
+                <div class="col-md-2 text-center">
+                  <img src="https://images.dubizzle.com.eg/thumbnails/47619036-120x90.webp" width="100px"
+                    alt="Image 8" />
+                  <p class="text-decoration-underline">Gear Up</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <button
+            class="carousel-control-prev left-btn"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+              style="color: black"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next right-btn"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+              style="color: black"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="col-md-2">
-          <img src="https://images.dubizzle.com.eg/thumbnails/40804818-120x90.webp" width="100px" alt="Image 2">
-          <p style="text-decoration: underline;">khaled Aboud automotive</p>
-        </div>
-        <div class="col-md-2">
-          <img src="https://images.dubizzle.com.eg/thumbnails/1167-120x90.webp" width="100px" alt="Image 3">
-          <p style="text-decoration: underline;">Aboul Ezz automotive</p>
-        </div>
-        <div class="col-md-2">
-          <img src="https://images.dubizzle.com.eg/thumbnails/53034143-120x90.webp" width="100px" alt="Image 4">
-          <p style="text-decoration: underline;">El-Tayaran Cars</p>
-        </div>
-        <div class="col-md-2">
-          <img src="https://images.dubizzle.com.eg/thumbnails/51873414-120x90.webp" width="100px" alt="Image 5">
-          <p style="text-decoration: underline;">Allam Automotive</p>
-        </div>
-        <div class="col-md-2">
-          <img src="https://images.dubizzle.com.eg/thumbnails/49965420-120x90.webp" width="100px" alt="Image 6">
-          <p style="text-decoration: underline;">Mohamed Fahmi Cars</p>
-        </div>
-      </div>
-    </div>
+        <!-- <br /><br /> -->
 
-    <div class="carousel-item">
-      <div class="row ">
-        <p style="padding-bottom: 10px;font-size: 20px;">Featured Businesses</p>
-
-        <div class="col-md-2 text-center">
-          <img src="https://images.dubizzle.com.eg/thumbnails/45381778-120x90.webp" width="100px" alt="Image 7">
-          <p style="text-decoration: underline;">El khial Cars</p>
-        </div>
-        <div class="col-md-2 text-center">
-          <img src="https://images.dubizzle.com.eg/thumbnails/41739723-120x90.webp" width="100px" alt="Image 8">
-          <p style="text-decoration: underline;">Auto Garage</p>
+        <div class="only">
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          <label for="checkbox1">Only with photos</label>
         </div>
 
-        <div class="col-md-2 text-center">
-          <img src="https://images.dubizzle.com.eg/thumbnails/21430697-120x90.webp" width="100px" alt="Image 8">
-          <p style="text-decoration: underline;">Car Accident</p>
+        <hr />
+        <div class="ad">
+          <h6>Featured ads</h6>
+          <h6>View all</h6>
         </div>
 
-
-        <div class="col-md-2 text-center">
-          <img src="https://images.dubizzle.com.eg/thumbnails/1167-120x90.webp" width="100px" alt="Image 8">
-          <p style="text-decoration: underline;">Aboul Ezz Automative</p>
-        </div>
-
-
-        <div class="col-md-2 text-center">
-          <img src="https://images.dubizzle.com.eg/thumbnails/47619201-120x90.webp" width="100px" alt="Image 8">
-          <p style="text-decoration: underline;">El Hawi Trading</p>
-        </div>
-
-
-        <div class="col-md-2 text-center">
-          <img src="https://images.dubizzle.com.eg/thumbnails/47619036-120x90.webp" width="100px" alt="Image 8">
-          <p style="text-decoration: underline;">Gear Up</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black;"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true" style="color:black;"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<br><br>
-
-
-
-      <div class="only">
-        <input type="checkbox" id="checkbox1" name="checkbox1" />
-        <label for="checkbox1">Only with photos</label>
-        
-      </div>
-
-
-
-
-
-
-
-
-      
-      
-      <hr>
-      <div class="ad">
-        <h6>Featured ads</h6>
-        <h6>View all</h6>
-      </div>
-
-
-       
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/62315839-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <a href="./SingleProduct.html"><img src="https://images.dubizzle.com.eg/thumbnails/62315839-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" /></a>
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 500,000</h3>
+              <h3 class="fs-5 price">EGP 500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">Ciat Cobra</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">Ciat Cobra</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/54872840-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/54872840-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 112,000</h3>
+              <h3 class="fs-5 price">EGP 112,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">Suzuki dzir</h2>
-            <p style="font-size: 9x;">New. 2022</p>
+            <h2 class="fs-5">Suzuki dzir</h2>
+            <p class="new_2023">New. 2022</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/62709759-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/62709759-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 40,500,000</h3>
+              <h3 class="fs-5 price">EGP 40,500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">merceds benz</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">merceds benz</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/62529672-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/62529672-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 5,255,000</h3>
+              <h3 class="fs-5 price">EGP 5,255,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">merceds benz cla 2000</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">merceds benz cla 2000</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/62511049-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/62511049-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 4,500,000</h3>
+              <h3 class="fs-5 price">EGP 4,500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">MBW</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">MBW</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/52228540-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/52228540-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 500,000</h3>
+              <h3 class="fs-5 price">EGP 500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">Jeep Chrokee</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">Jeep Chrokee</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/60962613-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/60962613-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 1,350,000</h3>
+              <h3 class="fs-5 price">EGP 1,350,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">c200 Carborleh 2023</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">c200 Carborleh 2023</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/61982734-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/61982734-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 6,500,000</h3>
+              <h3 class="fs-5 price">EGP 6,500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">MBW G23</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">MBW G23</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/62430199-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/62430199-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 1,500,000</h3>
+              <h3 class="fs-5 price">EGP 1,500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">Opel</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">Opel</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/62457972-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/62457972-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 500,000</h3>
+              <h3 class="fs-5 price">EGP 500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">chevorlet Avio 2022</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">chevorlet Avio 2022</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/58547070-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/58547070-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 500,000</h3>
+              <h3 class="fs-5 price">EGP 500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">Ciat Cobra</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">Ciat Cobra</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/62594418-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/62594418-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 500,000</h3>
+              <h3 class="fs-5 price">EGP 500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">Ciat Cobra</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">Ciat Cobra</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/61162990-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/61162990-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 500,000</h3>
+              <h3 class="fs-5 price">EGP 500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">Ciat Cobra</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">Ciat Cobra</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
 
-
-
-        <div class="d-flex flex-row justify-content-start align-items-center mb-4" style="border: 1px solid rgb(238, 228, 228);">
+        <div class="card d-flex flex-row justify-content-start align-items-center mb-4">
           <div>
-            <img src="https://images.dubizzle.com.eg/thumbnails/61377183-240x180.webp" width="300px" height="200px" alt="car image" style="margin-right: 20px;">
+            <img src="https://images.dubizzle.com.eg/thumbnails/61377183-240x180.webp" width="300px" height="200px"
+              alt="car image" class="me-3" />
           </div>
           <div class="ml-auto">
             <div class="icons">
-              <h3 style="color: red;font-size: 20px;">EGP 500,000</h3>
+              <h3 class="fs-5 price">EGP 500,000</h3>
               <!-- <i class="fa-regular fa-heart"></i> -->
             </div>
-            <h2 style="font-size: 20px;">Ciat Cobra</h2>
-            <p style="font-size: 9x;">New. 2023</p>
+            <h2 class="fs-5">Ciat Cobra</h2>
+            <p class="new_2023">New. 2023</p>
             <p>Nasr City. Cairo. 3 days ago</p>
-            <input type="submit" value="Call" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-style: none; border-radius: 10px;">
-            <input type="submit" value="Chat" style="background-color: transparent; color: black; padding-left: 25px; padding-right: 25px; border-radius: 10px; border: 1px solid red;">
+            <input type="submit" value="Call" class="text-white pe-4 ps-4 rounded-3 border-0 call" />
+            <input type="submit" value="Chat" class="pe-4 ps-4 rounded-3 bg-white chat" />
           </div>
         </div>
-
-
-
-
-
-        
-
-
-
-      
 
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
           <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            ...
-          </div>
-        
+          <div class="carousel-inner">...</div>
+
           <!-- Pagination -->
           <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="0">1</a></li>
-            <li class="page-item"><a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="1">2</a></li>
-            <li class="page-item"><a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="2">3</a></li>
-            <li class="page-item"><a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="3">4</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="0">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="1">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="2">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-bs-target="#myCarousel" data-bs-slide-to="3">4</a>
+            </li>
           </ul>
-        
+
           <!-- Left and right controls -->
           <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             ...
@@ -851,10 +788,44 @@
             ...
           </button>
         </div>
-      
-      
       </div>
     </div>
-    <script src="/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  </div>
+  <div class="footer"></div>
+
+  <script src="./bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JQuery/jquery-3.7.0.min.js"></script>
+
+  <script>
+    // Function to load and insert HTML content
+
+    function loadAndInsert(url, targetElement) {
+      fetch(url)
+        .then((response) => response.text())
+        .then((content) => {
+          document.querySelector(targetElement).innerHTML = content;
+          const scripts = document.querySelectorAll(
+            `${targetElement} script`
+          );
+          scripts.forEach((script) => {
+            const newScript = document.createElement("script");
+            newScript.textContent = script.textContent;
+            document.querySelector(targetElement).appendChild(newScript);
+          });
+        })
+        .catch((error) => {
+          console.error("Error loading " + url, error);
+        });
+    }
+
+    // Load header.html and insert into <header> element
+
+    loadAndInsert("./h&f/header.html", ".header");
+
+    // Load footer.html and insert into <footer> element
+
+    loadAndInsert("./h&f/footer.html", ".footer");
+  </script>
+</body>
+
 </html>

@@ -1,19 +1,30 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
-
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.Featured_Businesses{
+    background-color: #f6f6f6;
+}
+.chat{
+    border: 1px solid red;
+}
+.call{
+    background-color: #e00000;
+}
+.view{
+    color: rgb(96, 96, 209) !important;
+}
+.new_2023{
+    font-size: 9px;
+}
+.price{
+    color: #e00000;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
 .first a{
     text-decoration: none;
     color: black;
 }
-
-.first p {
-    font-weight: bold;
-    font-size: 25px;
-}
-
 
 .filter a{
     color: rgb(76, 74, 74);

@@ -7,10 +7,6 @@ function backToTop() {
   }
 }
 
-function opneSingleProduct() {
-  location.href = "./SingleProduct.html";
-}
-
 // location
 
 // Move the filterOptions function outside the $(document).ready() block
